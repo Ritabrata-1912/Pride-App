@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Heading from "./Components/Heading";
+import About from "./Components/About";
+import { Container } from "@mui/material";
+import Form from "./Components/Form";
+import Agenda from "./Components/Agenda";
+import ImageCol from "./Components/Image";
+import RList from "./Components/RList";
+import Carousel from "./Components/Carousel";
+import Bank from "./Components/Bank";
+import Footer from "./Components/Footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+    <Heading/>
+    <Carousel/>
+    <About/>
+    <Agenda/>
+    <ImageCol/>
+    <Bank/>
+    <Form/>
+    <RList/>
+    <Footer/>
+    </Container>
+    
   );
 }
 
