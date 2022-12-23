@@ -1,8 +1,11 @@
+import { Container,Box} from '@mui/material';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 export default function ImageCol(){
     return(
-    <ImageList sx={{ width: 328, height: 300 }} cols={3} rowHeight={164}>
+    <Container>
+      <Box sx={{textAlign:"center",fontSize:"38px",fontWeight:"900",marginBottom:"1em",marginTop:"3em"}}>Photo Gallery</Box>
+      <ImageList sx={{height:{xs:"15em",sm:"30em"}}} cols={3} rowHeight={{xs:164,sm:200}} >
     {itemData.map((item) => (
       <ImageListItem key={item.img}>
         <img
@@ -13,7 +16,9 @@ export default function ImageCol(){
         />
       </ImageListItem>
     ))}
-  </ImageList>)
+  </ImageList>
+    </Container>
+    )
 }
 const itemData = [
     {

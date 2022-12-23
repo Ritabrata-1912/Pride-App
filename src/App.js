@@ -5,14 +5,17 @@ import Form from "./Components/Form";
 import Agenda from "./Components/Agenda";
 import ImageCol from "./Components/Image";
 import RList from "./Components/RList";
-import Carousel from "./Components/Carousel";
+import ImageSlider from "./Components/ImageSlider";
 import Bank from "./Components/Bank";
 import Footer from "./Components/Footer";
+import Social from "./Components/Social";
+// import {Box} from "@mui/material"
 function App() {
   return (
-    <Container>
+    <Container maxWidth="xl" sx={{fontFamily:`'Neue Haas Grotesk Display Pro', sans-serif`,backgroundColor:"#eedd82"}}>
     <Heading/>
-    <Carousel/>
+    <ImageSlider/>
+    <Social/>
     <About/>
     <Agenda/>
     <ImageCol/>

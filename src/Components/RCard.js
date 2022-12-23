@@ -1,17 +1,22 @@
-import {Card, CardContent,Typography,CardMedia} from '@mui/material';
+import {Card, CardContent,CardMedia,Box,Stack} from '@mui/material';
+import {Discount} from '@mui/icons-material';
 function RCard(props){
     return(
-        <Card width="70" sx={{backgroundColor:"green"}}>
+        <Card width="70" sx={{borderRadius:'15px'}}>
          <CardContent>
-         <Typography sx={{position:'relative',top:'20%',left:'80%',zIndex:1}}>{props.discount}</Typography>
          <CardMedia
         component="img"
-        height="140"
-        width="50"
+        height={{xs:"80",sm:"80"}}
+        width="60"
         image={props.image}
-        alt="green iguana"/>
-            <Typography>{props.name}</Typography>
-            
+        alt="green iguana" sx={{borderRadius:"10px",marginBottom:"5px"}} />
+            <Stack direction="column" justifyContent="space-between" >
+            <Box sx={{fontWeight:"700",fontSize:"20px"}}>{props.name}</Box>
+            <Stack direction="row" alignItems="center" spacing={1}>
+                <span>{props.discount}</span>
+            <Discount size="small" sx={{color:"#c52d2d"}}/>
+            </Stack>
+            </Stack>
          </CardContent>
         </Card>
     )
