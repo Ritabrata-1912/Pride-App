@@ -12,7 +12,7 @@ import Social from "./Components/Social";
 // import {Box} from "@mui/material"
 function App() {
   return (
-    <Container maxWidth="xl" sx={{fontFamily:`'Neue Haas Grotesk Display Pro', sans-serif`,backgroundColor:"#eedd82"}}>
+    <Container maxWidth="xl" sx={{fontFamily:`'Neue Haas Grotesk Display Pro', sans-serif`}}>
     <Heading/>
     <ImageSlider/>
     <Social/>
