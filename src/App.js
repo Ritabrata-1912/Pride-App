@@ -22,11 +22,11 @@ function App() {
         <About />
         <Social/>
         <Agenda />
-        <Bank id="donate"/>
+        <Bank/>
         <Form />
-        <RList id="offers"/>
-        <ImageCol id="gallery"/>
-        <Vlist id="members"/>
+        <RList/>
+        <ImageCol/>
+        <Vlist/>
         <Footer />
       </Container>
     </>
