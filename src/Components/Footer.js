@@ -1,36 +1,12 @@
-import { Avatar,Box,Grid, Stack} from "@mui/material";
-export default function Footer(){
-    const style1={display:'flex',flexDirection:"column",alignItems:"center"};
-    return(
-        <Stack direction="column" alignItems="center" spacing={2} sx={{marginTop:"4em"}}>
-            <Box sx={{textAlign:"center",fontSize:"38px",fontWeight:"900"}} >Volunteer List</Box>
-            <Grid container rowSpacing={3}>
-            <Grid item xs={4} sx={style1}>
-                <Avatar sx={{width:{xs:60,md:150},height:{xs:60,md:150}}} src="https://images.unsplash.com/photo-1589118949245-7d38baf380d6"/>
-                <Box>Name</Box>
-            </Grid>
-            <Grid item xs={4} sx={style1}>
-                <Avatar sx={{width:{xs:60,md:150},height:{xs:60,md:150}}} src="https://images.unsplash.com/photo-1589118949245-7d38baf380d6"/>
-                <Box>Name</Box>
-            </Grid>
-            <Grid item xs={4} sx={style1}>
-                <Avatar sx={{width:{xs:60,md:150},height:{xs:60,md:150}}} src="https://images.unsplash.com/photo-1589118949245-7d38baf380d6"/>
-                <Box>Name</Box>
-            </Grid>
-            <Grid item xs={4} sx={style1}>
-                <Avatar sx={{width:{xs:60,md:150},height:{xs:60,md:150}}} src="https://images.unsplash.com/photo-1589118949245-7d38baf380d6"/>
-                <Box>Name</Box>
-            </Grid>
-            <Grid item xs={4} sx={style1}>
-                <Avatar sx={{width:{xs:60,md:150},height:{xs:60,md:150}}} src="https://images.unsplash.com/photo-1589118949245-7d38baf380d6"/>
-                <Box>Name</Box>
-            </Grid>
-            <Grid item xs={4} sx={style1}>
-                <Avatar sx={{width:{xs:60,md:150},height:{xs:60,md:150}}} src="https://images.unsplash.com/photo-1589118949245-7d38baf380d6"/>
-                <Box>Name</Box>
-            </Grid>
-        </Grid>
-        </Stack>
-        
+import { Avatar,Stack,Box} from "@mui/material"
+import TTM from "./ImageContain/TTMLogo.svg"
+export default function Footer() {
+    return (
+            <Stack direction="row" alignItems="center" justifyContent="center" spacing={{xs:1,md:2}} sx={{fontSize: { xs: "10px", sm: "16px" },marginTop:{xs:"10px",md:"20px"}}}>
+                <Avatar src={TTM} size="medium" />
+                <Box> This website is sponsored<Box sx={{fontSize:"9px"}}>by TRYCO Services Pvt. Ltd. </Box></Box>
+                <span>|</span>
+                <span sx={{fontWeight:"900"}}>© Copyright 2022 reserved.</span>
+            </Stack>
     )
 }

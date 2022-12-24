@@ -1,4 +1,4 @@
-import {Stack } from "@mui/material";
+import {Stack,Box } from "@mui/material";
 import {Carousel} from "react-carousel-minimal";
 import Image1 from './ImageContain/Image1.jpeg'
 import Image2 from './ImageContain/Image2.jpeg'
@@ -30,7 +30,8 @@ const data = [
   ];
   export default function ImageSlider(){
     return(
-          <Stack alignItems="center" sx={{marginTop:"1em"}}>
+          <Stack alignItems="center">
+            <Box sx={{height:{xs:"10px",md:"20px"}}}></Box>
             <Carousel
             data={data}
             time={3000}

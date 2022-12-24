@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, Grid, TextField, Typography, Box, Dialog, DialogContent, DialogContentText, DialogTitle, DialogActions, Stack, Checkbox, Link, Alert, Snackbar } from "@mui/material";
+import { Button, Card, CardContent, Grid, TextField, Typography, Dialog, DialogContent, DialogContentText, DialogTitle, DialogActions, Stack, Checkbox, Link, Alert, Snackbar } from "@mui/material";
 import { useState } from "react";
 // import DialogueBox from "./DialogueBox";
 function Form() {
@@ -21,30 +21,30 @@ function Form() {
     }
     const handleCheck = () => { if (check) { setCheck(false); } else { setCheck(true); } }
     return (
-        <Box sx={{ marginBottom: '10px' }}>
-            <Card>
+        <Stack alignItems={"center"} sx={{ marginBottom: '10px' }}>
+            <Card sx={{maxWidth:"700px",boxShadow:"0px 0px 4px gray"}}>
                 <Typography sx={{ fontSize: '38px', padding: '2px 0 2px 0', textAlign: 'center', fontWeight: "900" }}>Get FREE Invitation</Typography>
                 <CardContent>
                     <form>
                         <Grid container rowSpacing={3} direction="column" justifyContent="space-evenly" alignItems="center">
                             <Grid item xs={12}>
-                                <TextField name="name" required sx={{ width: { sm: "30em", md: "38em" } }} label="Name" placeholder="Enter Your Name" variant="outlined" onChange={inputChange} value={inputs.name} />
-                                <Snackbar open={open1} autoHideDuration={4000} onClose={() => setOpen1(false)} anchorOrigin={{ vertical: "top", horizontal: "center" }}>
+                                <TextField name="name" required sx={{ width:{xs:"15em",sm:"30em"}}} label="Name" placeholder="Enter Your Name" variant="outlined" onChange={inputChange} value={inputs.name} />
+                                <Snackbar open={open1} autoHideDuration={4000} onClose={() => setOpen1(false)} anchorOrigin={{ vertical: "bottom", horizontal: "center" }}>
                                     <Alert severity="warning" variant="filled" onClose={() => setOpen1(false)}>
                                         Name can't be empty
                                     </Alert>
                                 </Snackbar>
                             </Grid>
                             <Grid item xs={12}>
-                                <TextField name="phn" required sx={{ width: { sm: "30em", md: "38em" } }} type="number" label="Phone Number" placeholder="Enter Phone Number" variant="outlined" onChange={inputChange} value={inputs.phn} />
+                                <TextField name="phn" required sx={{width:{xs:"15em",sm:"30em"}}} type="number" label="Phone Number" placeholder="Enter Phone Number" variant="outlined" onChange={inputChange} value={inputs.phn} />
                             </Grid>
-                            <Snackbar open={open2} autoHideDuration={4000} onClose={() => setOpen2(false)} anchorOrigin={{ vertical: "top", horizontal: "center" }}>
+                            <Snackbar open={open2} autoHideDuration={4000} onClose={() => setOpen2(false)} anchorOrigin={{ vertical: "bottom", horizontal: "center" }}>
                                 <Alert severity="warning" variant="filled" onClose={() => setOpen2(false)}>
                                     Phone Number can't be empty
                                 </Alert>
                             </Snackbar>
                             <Grid item xs={12}>
-                                <TextField name="email" sx={{ width: { sm: "30em", md: "38em" } }} type="email" label="Email" placeholder="Enter E-mail id" variant="outlined" onChange={inputChange} value={inputs.email} />
+                                <TextField name="email" sx={{ width:{xs:"15em",sm:"30em"}}} type="email" label="Email" placeholder="Enter E-mail id" variant="outlined" onChange={inputChange} value={inputs.email} />
                             </Grid>
                             <Grid item xs={12}>
                                 <Checkbox checked={check} onChange={handleCheck} />
@@ -72,7 +72,7 @@ function Form() {
                     <Button variant="outlined" onClick={handleClose}>Close</Button>
                 </DialogActions>
             </Dialog>
-        </Box>
+        </Stack>
     )
 }
 export default Form;
