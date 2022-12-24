@@ -26,6 +26,7 @@ export default function RList(){
         </Grid>
     </Grid>
         </CardContent>
+        <span id="gallery"></span>
     </Card>
     
   )

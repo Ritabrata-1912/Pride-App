@@ -29,6 +29,7 @@ export default function Bank(){
            <Box sx={{fontSize:"17px",}}>
             Account Holder: <span style={{fontWeight:"700"}}>SOURAV DAS</span><ContentCopy onClick={()=>{copyDetails("SOURAV DAS")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
            </Box>
+           <span id="reg"></span>
            <Box sx={{fontSize:"17px"}}>
             UPI Id: <span style={{fontWeight:"700"}}>andy0910.sd@oksbi</span><ContentCopy onClick={()=>{copyDetails("andy0910.sd@oksbi")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
            </Box>

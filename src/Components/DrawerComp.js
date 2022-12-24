@@ -1,6 +1,7 @@
 import { Drawer,IconButton,List, ListItemButton, ListItemIcon,ListItemText} from "@mui/material"
 import { useState } from "react"
-import {Menu} from "@mui/icons-material";
+import {Menu,Close} from "@mui/icons-material";
+import { Link } from "react-scroll";
 export default function DrawerComp(){
     const [open,setOpen]=useState(false);
     return(
@@ -9,33 +10,33 @@ export default function DrawerComp(){
        <List>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText>Home</ListItemText>
+                <ListItemText ><Link onClick={()=>{setOpen(false)}} to="head" spy={true} smooth={true} offset={50} duration={500}>Home</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText>Offers</ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="offers" spy={true} smooth={true} duration={500}>Offers</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText>Members</ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="members" spy={true} smooth={true} duration={500}>Members</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText>Gallery</ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="gallery" spy={true} smooth={true} duration={500}>Gallery</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText>Donate</ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="donate" spy={true} smooth={true} offset={50} duration={500}>Donate</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
        </List>
       </Drawer>
       <IconButton sx={{color:'white'}} onClick={()=>{setOpen(!open)}}>
-         <Menu/>
+         {(!open)?(<Menu/>):<Close/>}
       </IconButton>
       </>
     )

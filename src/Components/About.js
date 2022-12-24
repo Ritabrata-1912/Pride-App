@@ -1,9 +1,11 @@
 import { Box, Button, Stack } from '@mui/material'
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import {Link} from "react-scroll";
 // import Bg from "./ImageContain/Image4.jpeg";
 function About() {
   return (
     <Box sx={{ paddingBottom: '20px', marginTop: "70px" }}>
+      <span id="head"></span>
       <Box sx={{ textAlign: 'center', fontSize: "38px", fontWeight: "900" }}>Welcome to Siliguri Pride Walk 2022</Box>
       <Box sx={{ padding: '5px 5px 20px 5px', fontSize: '1.2em', textAlign: "center" }}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sequi illo nobis, officiis nostrum aliquid soluta at est
         voluptatum hic voluptates enim ducimus quaerat pariatur sit dolorem dolore sunt? Doloribus?</Box>
@@ -12,7 +14,7 @@ function About() {
         <Box>Time:hh:mm</Box>
         <Box >Venue:Siliguri</Box>
       </Stack>
-      <Stack alignItems="center" sx={{ marginTop: "20px" }}><Button sx={{ width: { xs: "250px", md: "400px" }, height: "70px", borderRadius: "50px", padding: "10px", boxShadow: "0 0 3px black" }}><AppRegistrationIcon sx={{ marginRight: "10px" }} /> Register Now</Button></Stack>
+      <Stack alignItems="center" sx={{ marginTop: "20px" }}><Button sx={{ width: { xs: "250px", md: "400px" }, height: "70px", borderRadius: "50px", padding: "10px", boxShadow: "0 0 3px black" }}><AppRegistrationIcon sx={{ marginRight: "10px" }} /> <Link to="reg" spy={true} smooth={true} offset={50} duration={500}>Register</Link></Button></Stack>
     </Box>
   )
 }

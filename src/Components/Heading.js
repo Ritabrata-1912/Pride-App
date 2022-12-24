@@ -21,11 +21,12 @@ function Heading() {
                             <>
                                 <Typography>Pride-Walk</Typography>
                                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">
-                                    <Link to="/" spy={true} smooth={true} duration={500}>Home</Link>
-                                    <Link to="/Components/RList" spy={true} smooth={true} duration={500}>Offers</Link>
-                                    <Link to="members" spy={true} smooth={true} duration={500}>Members</Link>
-                                    <Link to="gallery" spy={true} smooth={true} duration={500}>Gallery</Link>
-                                    <Button variant="contained"><Link to="donate" spy={true} smooth={true} duration={500}>Donate</Link></Button>
+                                    <Button sx={{color:"white"}}><Link to="head" spy={true} smooth={true} offset={50} duration={500}>Home</Link></Button>
+                                    <Button sx={{color:"white"}}><Link to="offers" spy={true} smooth={true} duration={500}>Offers</Link></Button>
+                                    <Button sx={{color:"white"}}><Link to="members" spy={true} smooth={true} duration={500}>Members</Link></Button>
+                                    <Button sx={{color:"white"}}><Link to="gallery" spy={true} smooth={true} duration={500}>Gallery</Link></Button>
+                                    <Button variant="contained"><Link to="donate" spy={true} smooth={true} offset={50} duration={500}>Donate</Link></Button>
+                
                                 </Stack>
                             </>
                         )

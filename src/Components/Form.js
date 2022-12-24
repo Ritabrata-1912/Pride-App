@@ -60,6 +60,7 @@ function Form() {
                     </form>
                 </CardContent>
             </Card>
+            <span id="offers"></span>
             <Dialog open={open}>
                 <DialogTitle>Subscribe</DialogTitle>
                 <DialogContent>
