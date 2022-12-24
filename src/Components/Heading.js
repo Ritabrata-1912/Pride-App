@@ -1,10 +1,9 @@
 import { Box, Typography, Button, Stack, useMediaQuery, useTheme } from '@mui/material';
 import { AppBar } from "@mui/material";
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from "react-scroll";
 import DrawerComp from './DrawerComp';
 function Heading() {
-        const [value, setValue] = useState();
         const theme = useTheme();
         const match = useMediaQuery(theme.breakpoints.down('md'));
     return (
