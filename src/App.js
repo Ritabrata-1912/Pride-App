@@ -5,7 +5,7 @@ import Form from "./Components/Form";
 import Agenda from "./Components/Agenda";
 import ImageCol from "./Components/Image";
 import RList from "./Components/RList";
-// import ImageSlider from "./Components/ImageSlider";
+import ImageSlider from "./Components/ImageSlider";
 import Bank from "./Components/Bank";
 import Vlist from "./Components/Vlist";
 import Social from "./Components/Social";
@@ -18,6 +18,7 @@ function App() {
     <>
        <Container maxWidth="xl" sx={{ fontFamily: `'Neue Haas Grotesk Display Pro', sans-serif`}}>
         <Heading/>
+        <ImageSlider/>
         <About />
         <Social/>
         <Agenda />

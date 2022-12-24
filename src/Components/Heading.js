@@ -13,12 +13,12 @@ function Heading() {
                     {
                         match ? (
                             <>
-                                <Typography>Pride-Walk</Typography>
+                                <Typography sx={{fontWeight:"900"}}>Siliguri Pride Walk</Typography>
                                 <DrawerComp />
                             </>
                         ) : (
                             <>
-                                <Typography>Pride-Walk</Typography>
+                                <Typography sx={{fontWeight:"900"}}>Siliguri Pride Walk</Typography>
                                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">
                                     <Button sx={{color:"white"}}><Link to="head" spy={true} smooth={true} offset={50} duration={500}>Home</Link></Button>
                                     <Button sx={{color:"white"}}><Link to="offers" spy={true} smooth={true} duration={500}>Offers</Link></Button>

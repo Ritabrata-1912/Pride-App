@@ -30,7 +30,8 @@ const data = [
   ];
   export default function ImageSlider(){
     return(
-          <Stack alignItems="center">
+          <Stack alignItems="center" sx={{marginTop:"70px"}}>
+            <span id="head"></span>
             <Box sx={{height:{xs:"10px",md:"20px"}}}></Box>
             <Carousel
             data={data}
