@@ -3,7 +3,7 @@ import {ContentCopy} from '@mui/icons-material';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import copy from "copy-to-clipboard";
-import Qr from "./domoqr.png"
+import Qr from "./ImageContain/Qr.jpg"
 import { useState } from "react";
 export default function Bank(){
     // const sliderStyles={height:'900px',width:'200px',position:'relative'}
@@ -21,19 +21,22 @@ export default function Bank(){
             <Box sx={{fontSize:'38px',textAlign:"center",fontWeight:"900"}}>Donate for Good Cause</Box>
             <div style={slideStyles}></div>
            <Box sx={{fontSize:"17px"}}>
-            Account No: <span style={{fontWeight:"700"}}>684202010006036</span><ContentCopy onClick={()=>{copyDetails("684202010006036")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
+            Account No: <span style={{fontWeight:"700"}}>20481594278</span><ContentCopy onClick={()=>{copyDetails("20481594278")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
            </Box>
            <Box sx={{fontSize:"17px",}}>
-            IFSC:<span style={{fontWeight:"700"}}>UBIN0573744</span><ContentCopy onClick={()=>{copyDetails("UBIN0573744")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
+            IFSC:<span style={{fontWeight:"700"}}>SBIN0007206</span><ContentCopy onClick={()=>{copyDetails("SBIN0007206")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
            </Box>
            <Box sx={{fontSize:"17px",}}>
-            Account Holder: <span style={{fontWeight:"700"}}>SOURAV DAS</span><ContentCopy onClick={()=>{copyDetails("SOURAV DAS")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
+            Account Holder: <span style={{fontWeight:"700"}}>DIKSHA KUNDU</span><ContentCopy onClick={()=>{copyDetails("DIKSHA KUNDU")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
            </Box>
            <span id="reg"></span>
            <Box sx={{fontSize:"17px"}}>
-            UPI Id: <span style={{fontWeight:"700"}}>andy0910.sd@oksbi</span><ContentCopy onClick={()=>{copyDetails("andy0910.sd@oksbi")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
+            UPI Id: <span style={{fontWeight:"700"}}>salonikundu000@oksbi</span><ContentCopy onClick={()=>{copyDetails("salonikundu000@oksbi")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
            </Box>
-           <Box sx={{textAlign:'center',fontSize:"20px"}}>After Payment you can send screenshot at xyz@gmail.com</Box>
+           <Box sx={{fontSize:"17px"}}>
+            UPI Number: <span style={{fontWeight:"700"}}>8617619632</span><ContentCopy onClick={()=>{copyDetails("8617619632")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
+           </Box>
+           <Box sx={{textAlign:'center',fontSize:"20px"}}>After Payment you can send screenshot at siliguripridewalk18@gmail.com</Box>
         </Stack>
         <Snackbar open={open} autoHideDuration={4000} onClose={handleClose} anchorOrigin={{vertical:"bottom",horizontal:"center"}}>
         <Alert severity="info" variant="filled" onClose={handleClose}>

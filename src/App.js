@@ -10,6 +10,7 @@ import Bank from "./Components/Bank";
 import Vlist from "./Components/Vlist";
 import Social from "./Components/Social";
 import Footer from "./Components/Footer";
+import Core from "./Components/CoreList";
 // import Bg from "./Components/ImageContain/Background1.jpg";
 
 // import {Box} from "@mui/material"
@@ -26,6 +27,7 @@ function App() {
         <Form />
         <RList/>
         <ImageCol/>
+        <Core/>
         <Vlist/>
         <Footer />
       </Container>
