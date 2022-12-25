@@ -36,7 +36,7 @@ export default function Bank(){
            <Box sx={{fontSize:"17px"}}>
             UPI Number: <span style={{fontWeight:"700"}}>8617619632</span><ContentCopy onClick={()=>{copyDetails("8617619632")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>
            </Box>
-           <Box sx={{textAlign:'center',fontSize:"20px"}}>After Payment you can send screenshot at siliguripridewalk18@gmail.com</Box>
+           <Box sx={{textAlign:'center',fontSize:"20px"}}>After Payment you can send screenshot at <a href="mailto:siliguripridewalk18@gmail.com">siliguripridewalk18@gmail.com</a></Box>
         </Stack>
         <Snackbar open={open} autoHideDuration={4000} onClose={handleClose} anchorOrigin={{vertical:"bottom",horizontal:"center"}}>
         <Alert severity="info" variant="filled" onClose={handleClose}>
