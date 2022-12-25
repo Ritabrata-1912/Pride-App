@@ -13,15 +13,15 @@ import Image9 from './ImageContain/G9.JPG'
 import Image10 from './ImageContain/G10.JPG'
 import Image11 from './ImageContain/G11.JPG'
 import Image12 from './ImageContain/G12.JPG'
-import Image13 from './ImageContain/G13.JPG'
-import Image14 from './ImageContain/G14.JPG'
-import Image15 from './ImageContain/G15.JPG'
-import Image16 from './ImageContain/G16.JPG'
-import Image17 from './ImageContain/G17.JPG'
-import Image18 from './ImageContain/G18.JPG'
-import Image19 from './ImageContain/G19.JPG'
-import Image20 from './ImageContain/G20.JPG'
-import Image21 from './ImageContain/G21.JPG'
+// import Image13 from './ImageContain/G13.JPG'
+// import Image14 from './ImageContain/G14.JPG'
+// import Image15 from './ImageContain/G15.JPG'
+// import Image16 from './ImageContain/G16.JPG'
+// import Image17 from './ImageContain/G17.JPG'
+// import Image18 from './ImageContain/G18.JPG'
+// import Image19 from './ImageContain/G19.JPG'
+// import Image20 from './ImageContain/G20.JPG'
+// import Image21 from './ImageContain/G21.JPG'
 
 const itemData = [
   {
@@ -70,42 +70,6 @@ const itemData = [
   },
   {
     image:`${Image12}`,
-    caption: '',
-  },
-  {
-    image:`${Image13}`,
-    caption: '',
-  },
-  {
-    image:`${Image14}`,
-    caption: '',
-  },
-  {
-    image:`${Image15}`,
-    caption: '',
-  },
-  {
-    image:`${Image16}`,
-    caption: '',
-  },
-  {
-    image:`${Image17}`,
-    caption: '',
-  },
-  {
-    image:`${Image18}`,
-    caption: '',
-  },
-  {
-    image:`${Image19}`,
-    caption: '',
-  },
-  {
-    image:`${Image20}`,
-    caption: '',
-  },
-  {
-    image:`${Image21}`,
     caption: '',
   }
 ];
