@@ -1,5 +1,6 @@
 import { Card, CardContent, Box,Grid} from "@mui/material";
 import RCard from "./RCard";
+import Offer1 from "./ImageContain/Offer1.jpg";
 export default function RList(){
   return(
     <Card sx={{backgroundColor:'#fffa7e',marginBottom:'10px',borderRadius:'30px',marginTop:"4em",paddingTop:"2em"}}>
@@ -7,7 +8,7 @@ export default function RList(){
         <CardContent>
         <Grid container columnSpacing={2} rowSpacing={2}>
         <Grid item xs={6} sm={3}>
-            <RCard name='Name1' discount='10%' image='https://images.unsplash.com/photo-1589118949245-7d38baf380d6'/>
+            <RCard name='Veganation' discount='15%' image={Offer1}/>
         </Grid>
         <Grid item xs={6} sm={3}>
             <RCard name='Name2' discount='20%' image='https://images.unsplash.com/photo-1589118949245-7d38baf380d6'/>
