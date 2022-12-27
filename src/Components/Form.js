@@ -24,7 +24,7 @@ function Form() {
     return (
         <Stack alignItems={"center"} sx={{ marginBottom: '10px' }}>
             <Card sx={{maxWidth:"700px",boxShadow:"0px 0px 4px gray"}}>
-                <Typography sx={{ fontSize: '38px', padding: '2px 5px 2px 5px', textAlign: 'center', fontWeight: "900" }}><RainbowText>FREE Invitation</RainbowText></Typography>
+                <Typography sx={{ fontSize: '38px', padding: '2px 10px 2px 10px', textAlign: 'center', fontWeight: "900" }}><RainbowText>FREE Invitation</RainbowText></Typography>
                 <CardContent>
                     <form>
                         <Grid container rowSpacing={3} direction="column" justifyContent="space-evenly" alignItems="center">
