@@ -5,6 +5,7 @@ import Alert from '@mui/material/Alert';
 import copy from "copy-to-clipboard";
 import Qr from "./ImageContain/Qr.jpg"
 import { useState } from "react";
+import RainbowText from "rainbow-text-react";
 export default function Bank(){
     // const sliderStyles={height:'900px',width:'200px',position:'relative'}
     const slideStyles={width:'200px',height:'150px',backgroundRadius:'10px',
@@ -18,7 +19,7 @@ export default function Bank(){
     return(
         <Container>
         <Stack alignItems='center' justifyContent='space-around' spacing={2} sx={{marginBottom:'4em',marginTop:"4em"}}>
-            <Box sx={{fontSize:'38px',textAlign:"center",fontWeight:"900"}}>Donate for Good Cause</Box>
+            <Box sx={{fontSize:'38px',textAlign:"center",fontWeight:"900"}}><RainbowText>Donate For Good Cause</RainbowText></Box>
             <div style={slideStyles}></div>
            <Box sx={{fontSize:"17px"}}>
             Account No: <span style={{fontWeight:"700"}}>20481594278</span><ContentCopy onClick={()=>{copyDetails("20481594278")}} sx={{marginLeft:'10px'}} fontSize={"small"}/>

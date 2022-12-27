@@ -20,7 +20,7 @@ export default function DrawerComp(){
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText><Link onClick={()=>{setOpen(false)}} to="members" spy={true} smooth={true} duration={500}>Members</Link></ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="members" spy={true} smooth={true} duration={500}>Teams</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>

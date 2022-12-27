@@ -2,6 +2,7 @@ import { Box, Button, Stack,Collapse } from '@mui/material'
 import { Accessibility } from '@mui/icons-material';
 import {Link} from "react-scroll";
 import { useState } from 'react';
+import RainbowText from 'rainbow-text-react';
 // import Bg from "./ImageContain/Image4.jpeg";
 function About() {
   const [check,setCheck]=useState(false);
@@ -19,7 +20,8 @@ function About() {
   return (
     <Box sx={{ paddingBottom: '20px', marginTop: "20px" }}>
       <Stack alignItems="center" sx={{ marginTop: "20px" }}><Button sx={{ width: { xs: "150px", md: "300px" }, height: "50px", borderRadius: "50px", padding: "10px", boxShadow: "0 0 3px black"}} variant="contained"><Accessibility sx={{ marginRight: "10px" }} /> <Link to="reg" spy={true} smooth={true} offset={50} duration={500}>Join Us</Link></Button></Stack>
-      <Box sx={{ textAlign: 'center', fontSize: "38px", fontWeight: "900",marginTop:"20px" }}>About Us</Box>
+      <Box sx={{ textAlign: 'center', fontSize: "38px", fontWeight: "900",marginTop:"20px", }}>
+        <RainbowText>About Us</RainbowText></Box>
       <Box sx={{ padding: '5px 5px 20px 5px', fontSize: '1.2em', textAlign: "center" }}>What started as a celebration of the landmark judgement in the year 2018, 
       led to the creation of this little family known as the Team SPW. It initially started as a group of students who volunteered to organise the first ever Pride Parade of Siliguri.
        With a group of 35+ volunteers of various age groups, Team SPW has organised 3 Pride Parades,
@@ -46,3 +48,4 @@ function About() {
   )
 }
 export default About;
+// const arr1=[]
