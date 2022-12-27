@@ -10,27 +10,27 @@ export default function DrawerComp(){
        <List>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText ><Link onClick={()=>{setOpen(false)}} to="head" spy={true} smooth={true} offset={50} duration={500}>Home</Link></ListItemText>
+                <ListItemText ><Link onClick={()=>{setOpen(false)}} to="head" spy={true} offset={50} smooth={true} duration={500}>Home</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText><Link onClick={()=>{setOpen(false)}} to="offers" spy={true} smooth={true} duration={500}>Offers</Link></ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="offers" spy={true} offset={50} smooth={true} duration={500}>Offers</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText><Link onClick={()=>{setOpen(false)}} to="members" spy={true} smooth={true} duration={500}>Teams</Link></ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="members" spy={true} offset={50} smooth={true} duration={500}>Teams</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText><Link onClick={()=>{setOpen(false)}} to="gallery" spy={true} smooth={true} duration={500}>Gallery</Link></ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="gallery" spy={true} offset={50} smooth={true} duration={500}>Gallery</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
         <ListItemButton>
             <ListItemIcon>
-                <ListItemText><Link onClick={()=>{setOpen(false)}} to="donate" spy={true} smooth={true} offset={50} duration={500}>Donate</Link></ListItemText>
+                <ListItemText><Link onClick={()=>{setOpen(false)}} to="donate" spy={true} offset={50} smooth={true} duration={500}>Donate</Link></ListItemText>
             </ListItemIcon>
         </ListItemButton>
        </List>
