@@ -17,10 +17,10 @@ const ShareWindow = (props) => {
             <FacebookShareButton children="facebook" url={window.location.href}>
             <FacebookIcon round/>
            </FacebookShareButton>
-           <TwitterShareButton>
+           <TwitterShareButton children='twitter' url={window.location.href}>
             <TwitterIcon round/>
            </TwitterShareButton>
-           <LinkedinShareButton>
+           <LinkedinShareButton children="linkedin" url={window.location.href}>
            <LinkedinIcon round/>
            </LinkedinShareButton>
            <WhatsappShareButton children="whatsapp" url={window.location.href}>
