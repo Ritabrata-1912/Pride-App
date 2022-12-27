@@ -1,5 +1,6 @@
 import { Button, Card, CardContent, Grid, TextField, Typography, Dialog, DialogContent, DialogContentText, DialogTitle, DialogActions, Stack, Checkbox, Link, Alert, Snackbar } from "@mui/material";
 import { useState } from "react";
+import RainbowText from 'rainbow-text-react';
 // import DialogueBox from "./DialogueBox";
 function Form() {
     const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ function Form() {
     return (
         <Stack alignItems={"center"} sx={{ marginBottom: '10px' }}>
             <Card sx={{maxWidth:"700px",boxShadow:"0px 0px 4px gray"}}>
-                <Typography sx={{ fontSize: '38px', padding: '2px 2px 2px 2px', textAlign: 'center', fontWeight: "900" }}>Get FREE Invitation</Typography>
+                <Typography sx={{ fontSize: '38px', padding: '2px 5px 2px 5px', textAlign: 'center', fontWeight: "900" }}><RainbowText>FREE Invitation</RainbowText></Typography>
                 <CardContent>
                     <form>
                         <Grid container rowSpacing={3} direction="column" justifyContent="space-evenly" alignItems="center">
