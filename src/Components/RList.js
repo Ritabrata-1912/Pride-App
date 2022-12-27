@@ -8,7 +8,7 @@ export default function RList(){
         <CardContent>
         <Grid container columnSpacing={2} rowSpacing={2}>
         <Grid item xs={6} sm={3}>
-            <RCard name='Veganation' discount='15%' image={Offer1}/>
+            <RCard name='Veganation' discount='15%' image={Offer1} link="https://www.trythemenu.com/joints/621fa2189ee71b14fe31a8b0"/>
         </Grid>
         <Grid item xs={6} sm={3}>
             <RCard name='Name2' discount='20%' image='https://images.unsplash.com/photo-1589118949245-7d38baf380d6'/>
