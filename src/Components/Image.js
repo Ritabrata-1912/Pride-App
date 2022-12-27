@@ -13,64 +13,55 @@ import Image9 from './ImageContain/G9.JPG'
 import Image10 from './ImageContain/G10.JPG'
 import Image11 from './ImageContain/G11.JPG'
 import Image12 from './ImageContain/G12.JPG'
-// import Image13 from './ImageContain/G13.JPG'
-// import Image14 from './ImageContain/G14.JPG'
-// import Image15 from './ImageContain/G15.JPG'
-// import Image16 from './ImageContain/G16.JPG'
-// import Image17 from './ImageContain/G17.JPG'
-// import Image18 from './ImageContain/G18.JPG'
-// import Image19 from './ImageContain/G19.JPG'
-// import Image20 from './ImageContain/G20.JPG'
-// import Image21 from './ImageContain/G21.JPG'
-
+// import {useMediaQuery,useTheme} from '@mui/material';
 const itemData = [
   {
     image: `${Image1}`,
-    caption: '',
+    caption: '`1',
   },
   {
     image: `${Image2}`,
-    caption: '',
+    caption: '2',
   },
   {
     image: `${Image3}`,
-    caption: '',
+    caption: '3',
   },
   {
     image:`${Image4}`,
-    caption: '',
+    caption: '4',
   },
   {
     image:`${Image5}`,
-    caption: '',
+    caption: '5',
   },
   {
     image:`${Image6}`,
-    caption: '',
+    caption: '6',
   },
   {
     image:`${Image7}`,
-    caption: '',
+    caption: '7',
   },
   {
     image:`${Image8}`,
-    caption: '',
+    caption: '8',
   },
   {
     image:`${Image9}`,
-    caption: '',
+    caption: '9',
   },
   {
     image:`${Image10}`,
-    caption: '',
+    caption: '10',
   },
   {
     image:`${Image11}`,
-    caption: '',
+    caption: '11',
   },
   {
     image:`${Image12}`,
-    caption: '',
+    caption: '12',
   }
 ];
 export default function ImageCol(){
@@ -79,7 +70,7 @@ export default function ImageCol(){
       <Box sx={{textAlign:"center",fontSize:"38px",fontWeight:"900",marginBottom:"1em",marginTop:"3em"}}>Photo Gallery</Box>
       <ImageList sx={{height:{xs:"15em",sm:"30em"}}} cols={3} rowHeight={{xs:164,sm:200}} >
     {itemData.map((item) => (
-      <ImageListItem key={item.image}>
+      <ImageListItem key={item.caption}>
         <img
           src={`${item.image}?w=164&h=164&fit=crop&auto=format`}
           srcSet={`${item.image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}

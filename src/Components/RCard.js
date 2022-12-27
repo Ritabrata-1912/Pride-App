@@ -12,7 +12,7 @@ function RCard(props){
         height={{xs:"80",sm:"80"}}
         width="60"
         image={props.image}
-        alt="green iguana" sx={{borderRadius:"10px",marginBottom:"10px"}} />
+        alt="green iguana" sx={{borderRadius:"10px",marginBottom:"10px",loading:"lazy"}} />
             <Stack direction="column" justifyContent="space-between" spacing={1.5}>
             <Box sx={{fontWeight:"700",fontSize:"20px",cursor:"pointer"}} >{props.name}</Box>
             <Stack direction="row" alignItems="center" spacing={1}>

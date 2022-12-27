@@ -22,11 +22,11 @@ function About() {
       <Stack alignItems="center" sx={{ marginTop: "20px" }}><Button sx={{ width: { xs: "150px", md: "300px" }, height: "50px", borderRadius: "50px", padding: "10px", boxShadow: "0 0 3px black"}} variant="contained"><Accessibility sx={{ marginRight: "10px" }} /> <Link to="reg" spy={true} smooth={true} offset={50} duration={500}>Join Us</Link></Button></Stack>
       <Box sx={{ textAlign: 'center', fontSize: "38px", fontWeight: "900",marginTop:"20px", }}>
         <RainbowText>About Us</RainbowText></Box>
-      <Box sx={{ padding: '5px 5px 20px 5px', fontSize: '1.2em', textAlign: "center" }}>What started as a celebration of the landmark judgement in the year 2018, 
+      <Box sx={{ padding: '5px 5px 20px 5px', fontSize:{xs:"18px",md:'1.2em'}, textAlign: "center" }}>What started as a celebration of the landmark judgement in the year 2018, 
       led to the creation of this little family known as the Team SPW. It initially started as a group of students who volunteered to organise the first ever Pride Parade of Siliguri.
        With a group of 35+ volunteers of various age groups, Team SPW has organised 3 Pride Parades,
        Siliguri's first Queer Carnival and a District Meeting on Trans Rights and LGBTQIA+ Issues.</Box>
-       <Box sx={{ padding: '5px 5px 20px 5px', fontSize: '1.2em', textAlign: "center" }}>
+       <Box sx={{ padding: '5px 5px 20px 5px', fontSize:{xs:"18px",md:"1.2em"}, textAlign: "center" }}>
         <p style={{fontWeight:"900"}}>What We Do</p>
        We are a Queer Collective known by the name of Siliguri Pride Walk, consisting of queer individuals as well as allies in and around Siliguri. 
    <Collapse in={check}> <p>In 2018, we hosted Siliguri's very first pride parade. A pride parade is an outdoor event celebrating LGBTQIA+ social and self acceptance, achievements, legal rights, and pride. The events also at times serve as demonstrations for legal rights such as queer marriage rights, horizontal reservation and inclusive education. 
