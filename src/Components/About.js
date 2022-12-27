@@ -39,9 +39,9 @@ function About() {
        <Button size={"small"} sx={{marginTop:"10px"}} onClick={handleCheck} variant="outlined">{text}</Button>
        </Box>
       <Stack direction="column" alignItems="center" spacing={2} sx={{ fontSize: '1.2em' }}>
-        <Box>Date:dd/mm/yyyy</Box>
-        <Box>Time:hh:mm</Box>
-        <Box >Venue:Siliguri</Box>
+        <Box>Date : 30.12.2022</Box>
+        <Box>Time : 10 am to 2 pm</Box>
+        <Box >Venue : Air View to Baghajatin Park</Box>
       </Stack>
       
     </Box>

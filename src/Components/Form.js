@@ -1,6 +1,8 @@
-import { Button, Card, CardContent, Grid, TextField,Dialog, DialogContent, DialogContentText, DialogTitle, DialogActions, Box,Stack, Checkbox, Link, Alert, Snackbar } from "@mui/material";
+import { Button, Card, CardContent, Grid, TextField,Dialog, DialogContent,DialogActions, Box,Stack, Checkbox, Link, Alert, Snackbar } from "@mui/material";
 import { useState } from "react";
 import RainbowText from 'rainbow-text-react';
+import ShareWindow from "./Share";
+import Ticket from "./Ticket";
 // import DialogueBox from "./DialogueBox";
 function Form() {
     const [open, setOpen] = useState(false);
@@ -21,6 +23,11 @@ function Form() {
             setOpen(true);
     }
     const handleCheck = () => { if (check) { setCheck(false); } else { setCheck(true); } }
+    const [showModal, setShowModal] = useState(false);
+
+  const toggleModal= () => {
+    setShowModal(!showModal);
+  }
     return (
         <Stack alignItems={"center"} sx={{ marginBottom: '10px' }}>
             <Card sx={{maxWidth:"700px",boxShadow:"0px 0px 4px gray"}}>
@@ -54,7 +61,7 @@ function Form() {
                             <Grid item xs={12}>
                                 <Stack direction="row" justifyContent="space-between" sx={{ width: "10em" }}>
                                     <Button type="submit" variant="contained" size="small" onClick={handleClick}>Submit</Button>
-                                    <Button variant="contained" size="small">Share</Button>
+                                    <Button variant="contained" size="small" onClick={toggleModal}>Share</Button>
                                 </Stack>
                             </Grid>
                         </Grid>
@@ -63,17 +70,14 @@ function Form() {
             </Card>
             <span id="offers"></span>
             <Dialog open={open}>
-                <DialogTitle>Subscribe</DialogTitle>
                 <DialogContent>
-                    <DialogContentText>
-                        To subscribe to this website, please enter your email address here. We
-                        will send updates occasionally.
-                    </DialogContentText>
+                    <Ticket name={inputs.name}/>
                 </DialogContent>
                 <DialogActions>
                     <Button variant="outlined" onClick={handleClose}>Close</Button>
                 </DialogActions>
             </Dialog>
+            <ShareWindow showModal={showModal} toggleModal={toggleModal}/>
         </Stack>
     )
 }
