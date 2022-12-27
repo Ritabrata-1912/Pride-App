@@ -1,8 +1,9 @@
-import { Button, Card, CardContent, Grid, TextField,Dialog, DialogContent,DialogActions, Box,Stack, Checkbox, Link, Alert, Snackbar } from "@mui/material";
+import { Button, Card, CardContent, Grid, TextField,Dialog, DialogContent,DialogActions, Box,Stack, Checkbox, Link, Alert, Snackbar, DialogTitle } from "@mui/material";
 import { useState } from "react";
 import RainbowText from 'rainbow-text-react';
 import ShareWindow from "./Share";
 import Ticket from "./Ticket";
+import { Close } from "@mui/icons-material";
 // import DialogueBox from "./DialogueBox";
 function Form() {
     const [open, setOpen] = useState(false);
@@ -70,11 +71,12 @@ function Form() {
             </Card>
             <span id="offers"></span>
             <Dialog open={open}>
+                <DialogTitle sx={{display:"flex",justifyContent:"flex-end"}}><Button color="error" variant="contained" onClick={handleClose}><Close/></Button></DialogTitle>
                 <DialogContent>
                     <Ticket name={inputs.name}/>
                 </DialogContent>
                 <DialogActions>
-                    <Button variant="outlined" onClick={handleClose}>Close</Button>
+                    <Box sx={{width:'350px',margin:'auto',marginBottom:"5px",textAlign:'center',fontWeight:"600",fontSize:'15px'}}>Please take a screenshot of this ticket. It will also be sent to you via mail.</Box>
                 </DialogActions>
             </Dialog>
             <ShareWindow showModal={showModal} toggleModal={toggleModal}/>
