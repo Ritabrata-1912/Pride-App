@@ -163,7 +163,10 @@ export default function Form() {
                 <Checkbox checked={check} onChange={handleCheck} />
                 <span>
                   <span style={{ marginRight: "5px" }}>I accept the</span>
-                  <Link href="https://www.termsandconditionsgenerator.com/live.php?token=xzLZgErNMGSZicUFYlvoLyzYkDKyZ6ez" underline="always">
+                  <Link
+                    href="https://www.termsandconditionsgenerator.com/live.php?token=xzLZgErNMGSZicUFYlvoLyzYkDKyZ6ez"
+                    underline="always"
+                  >
                     terms and conditions
                   </Link>
                 </span>
@@ -183,11 +186,7 @@ export default function Form() {
                   >
                     Submit
                   </Button>
-                  <Button
-                    variant="outlined"
-                    size="small"
-                    onClick={toggleModal}
-                  >
+                  <Button variant="outlined" size="small" onClick={toggleModal}>
                     Share
                   </Button>
                 </Stack>
@@ -220,7 +219,7 @@ export default function Form() {
               fontSize: "15px",
             }}
           >
-            Please take a screenshot of this ticket.
+            You can take a screenshot !
           </Box>
         </DialogActions>
       </Dialog>
