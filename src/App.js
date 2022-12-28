@@ -13,21 +13,20 @@ import Teams from "./Components/Teams";
 function App() {
   return (
     <>
-       <Container maxWidth="xl" sx={{ fontFamily: `'Poppins', sans-serif`}}>
-        <Heading/>
-        <ImageSlider/>
+      <Container maxWidth="xl" sx={{ fontFamily: `'Poppins', sans-serif` }}>
+        <Heading />
+        <ImageSlider />
         <About />
-        <Social/>
+        <Social />
         <Agenda />
-        <Bank/>
+        <Bank />
         <Form />
-        <RList/>
-        <ImageCol/>
-        <Teams/>
+        <RList />
+        <ImageCol />
+        <Teams />
         <Footer />
       </Container>
     </>
-    
   );
 }
 
