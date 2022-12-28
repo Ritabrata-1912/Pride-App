@@ -163,7 +163,7 @@ export default function Form() {
                 <Checkbox checked={check} onChange={handleCheck} />
                 <span>
                   <span style={{ marginRight: "5px" }}>I accept the</span>
-                  <Link href="https://www.trythemenu.com/" underline="always">
+                  <Link href="https://www.termsandconditionsgenerator.com/live.php?token=xzLZgErNMGSZicUFYlvoLyzYkDKyZ6ez" underline="always">
                     terms and conditions
                   </Link>
                 </span>
